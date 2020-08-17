@@ -42,6 +42,7 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+    Closure comes from a function that uses variables from a different scope whenever the variable is not present in the function itself.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,8 +64,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+    Closure is used with the 'name' parameter from personalDice, the function within personalDice uses 'name', but it is not declared within that function.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+    dansRoll will always return 'Dan rolled a' but the number 'newRoll' can change from time to time it is called as it is a random number between 0 and 6.
 c. What is the lexical scope of `newRoll`? 
+    The lexical scope for newRoll is function scope.
 
 ### Task 2c - Exit Ticket
 
